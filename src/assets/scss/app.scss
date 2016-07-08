@@ -161,3 +161,16 @@
     color: $dark-gray;
   }
 }
+
+/* People List */
+#people-list {
+  .accordion-title {
+    font-size: 1.2rem;
+    border: none;
+  }
+}
+
+/* Footer styles */
+#footer {
+  height: 40vh;
+}
