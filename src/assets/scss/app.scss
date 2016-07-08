@@ -75,12 +75,17 @@
 /* Hero image */
 .hero {
   background-size: cover;
-  height: 100vh;
+  height: 66vh;
   position: relative;
   top: 0;
   left: 0;
   z-index: -100;
   overflow: hidden;
+  @include breakpoint(small only) {
+    background: url(../img/steve_runs_comp.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
   &:before {
     content: '';
 		position: absolute;
@@ -88,10 +93,13 @@
 		right: 0;
 		bottom: 0;
 		left: 0;
-		background-image: linear-gradient(to bottom right,#343434,#111111);
-		opacity: .4;
+    background: -moz-radial-gradient(center, ellipse cover,  rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.9) 100%); /* FF3.6-15 */
+    background: -webkit-radial-gradient(center, ellipse cover,  rgba(0,0,0,0.25) 0%,rgba(0,0,0,0.9) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: radial-gradient(ellipse at center,  rgba(0,0,0,0.25) 0%,rgba(0,0,0,0.9) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80000000', endColorstr='#cc000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
     z-index: 10;
-  }
+    }
+
 
   h1 {
     color: $white;
