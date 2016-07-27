@@ -10,6 +10,14 @@ import sherpa   from 'style-sherpa';
 import yaml     from 'js-yaml';
 import fs       from 'fs';
 
+// Require rsync for deploy function
+import rsync from 'gulp-rsync';
+import gutil from 'gulp-util';
+import argv from 'minimist';
+import gulpif from 'gulp-if';
+import prompt from 'gulp-prompt';
+// import sftp from 'gulp-sftp';
+
 // Load all Gulp plugins into one variable
 const $ = plugins();
 
@@ -140,3 +148,74 @@ function watch() {
   gulp.watch('src/assets/img/**/*').on('change', gulp.series(images, browser.reload));
   gulp.watch('src/styleguide/**').on('change', gulp.series(styleGuide, browser.reload));
 }
+
+//Function to deploy to staging or production
+gulp.task('deploy', function() {
+
+  // Dirs and Files to sync
+  rsyncPaths = [PATHS.dist];
+
+  // Default options for rsync
+  rsyncConf = {
+    progress: true,
+    incremental: true,
+    relative: true,
+    emptyDirectories: true,
+    recursive: true,
+    clean: true,
+    exclude: [],
+  };
+
+  // Staging
+  if (argv.staging) {
+
+    rsyncConf.hostname = 'ps523319.dreamhostps.com'; // hostname
+    rsyncConf.username = 'jasonlmann'; // ssh username
+    rsyncConf.destination = '/staging.kinggin.com'; // path where uploaded files go
+
+  // Production
+  } else if (argv.production) {
+
+    rsyncConf.hostname = ''; // hostname
+    rsyncConf.username = ''; // ssh username
+    rsyncConf.destination = ''; // path where uploaded files go
+
+
+  // Missing/Invalid Target
+  } else {
+    throwError('deploy', gutil.colors.red('Missing or invalid target'));
+  }
+
+
+  // Use gulp-rsync to sync the files
+  return gulp.src(rsyncPaths)
+  .pipe(gulpif(
+      argv.production,
+      prompt.confirm({
+        message: 'Heads Up! Are you SURE you want to push to PRODUCTION?',
+        default: false
+      })
+  ))
+  .pipe(rsync(rsyncConf));
+
+});
+
+
+function throwError(taskName, msg) {
+  throw new gutil.PluginError({
+      plugin: taskName,
+      message: msg
+    });
+}
+
+// Try using gulp-sftp for deployment
+var sftp = require('gulp-sftp');
+
+gulp.task('deploy2', function () {
+  return gulp.src('dist/*')
+    .pipe(sftp ({
+      host: 'ps523319.dreamhostps.com',
+      auth: 'privateKeyEncrypted',
+      remotepath: '/tmp/'
+    }));
+});
