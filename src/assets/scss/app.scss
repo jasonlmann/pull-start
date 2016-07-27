@@ -52,6 +52,12 @@
 @include motion-ui-transitions;
 @include motion-ui-animations;
 
+body, p, a {
+  @include breakpoint(small only) {
+    font-size: 1.2rem;
+  };
+}
+
 /* Navigation - Top Bar  */
 .top-bar {
   width: 100%;
@@ -161,6 +167,12 @@
 /* Project list */
 .project-list-item {
   padding: 2rem 0;
+}
+
+
+/* Past Projects */
+.film-detail {
+  // background: pink;
 }
 
 
