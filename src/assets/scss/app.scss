@@ -167,8 +167,12 @@ body, p, a {
   @include grid-row;
   padding: 2rem 0;
 }
+.project-header, .project-body {
+  @include grid-row;
+}
 .project-title {
-  .project-status {
+  @include grid-column(12);
+  span {
     font-weight: normal;
     font-size: 1rem;
     @include breakpoint(small) {
@@ -178,9 +182,14 @@ body, p, a {
 }
 .project-image {
   @include grid-column(12);
-  @include breakpoint(medium up) {
-    @include grid-column(12);
-
+  @include breakpoint(large up) {
+    @include grid-column(8);
+  }
+}
+.project-description {
+  @include grid-column(12);
+  @include breakpoint(large up) {
+    @include grid-column(4);
   }
 }
 
