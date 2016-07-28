@@ -166,9 +166,25 @@ body, p, a {
 
 /* Project list */
 .project-list-item {
+  @include grid-row;
   padding: 2rem 0;
 }
+.project-title {
+  .project-status {
+    font-weight: normal;
+    font-size: 1rem;
+    @include breakpoint(small) {
+      font-size: .8rem;
+    }
+  }
+}
+.project-image {
+  @include grid-column(12);
+  @include breakpoint(medium up) {
+    @include grid-column(12);
 
+  }
+}
 
 /* Past Projects */
 .film-detail {
