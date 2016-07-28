@@ -68,14 +68,12 @@ body, p, a {
         text-transform: uppercase;
         font-weight: bold;
         background-color: transparent;
-
-      }
-      .button {
-        // border: 1px solid $dark-gray;
+        @include breakpoint(small) {
+          padding-left: 0;
+        }
       }
     }
   }
-
 }
 
 /* Hero image */
