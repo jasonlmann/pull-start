@@ -1,23 +1,18 @@
 <div data-sticky-container>
-  <nav class="top-bar main-nav" data-sticky data-options="marginTop:0">
+  <nav class="top-bar main-nav sticky" data-sticky data-options="marginTop:0; stickyOn:small;"  width="100%">
     <div class="top-bar-title">
       <strong>PULL-START</strong>
     </div>
 
     <div id="responsive-menu">
       <div class="top-bar-right">
-        <ul class="menu align-right">
-          <li><a href="#">Home</a></li>
+        <ul class="horizontal menu">
           <li><a href="#projects">Projects</a></li>
-          <li><a href="#about-us">About Us</a></li>
-          <!-- <li><input type="search" placeholder="Search"></li>
-          <li><button type="button" class="button">Search</button></li> -->
+          <li><a href="#contact">Contact</a></li>
+          <li class="show-for-medium"><a href="#about-us">About Us</a></li>
+          <li class="show-for-medium"><a href="#top">Home</a></li>
         </ul>
       </div>
     </div>
-
-    <span data-responsive-toggle="responsive-menu" data-hide-for="medium">
-      <button class="menu-icon dark" type="button" data-toggle></button>
-    </span>
   </nav>
 </div>
