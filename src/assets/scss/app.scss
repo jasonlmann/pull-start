@@ -210,4 +210,10 @@ body, p, a {
 /* Footer styles */
 #footer {
   height: 40vh;
+
+  p {
+    text-align: center;
+    font-size: .7rem;
+    color: $dark-gray;
+  }
 }
