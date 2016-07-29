@@ -165,7 +165,7 @@
 /* Project list */
 .project-list-item {
   @include grid-row;
-  padding: 2rem 0;
+  padding: 3rem 0;
 }
 .project-header, .project-body {
   @include grid-row;
