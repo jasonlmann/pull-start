@@ -70,6 +70,7 @@
         background-color: transparent;
         @include breakpoint(small) {
           padding-left: 0;
+          font-size: .8rem;
         }
       }
     }
