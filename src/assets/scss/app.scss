@@ -52,11 +52,11 @@
 @include motion-ui-transitions;
 @include motion-ui-animations;
 
-body, p, a {
-  @include breakpoint(small only) {
-    font-size: 1.2rem;
-  };
-}
+// body, p, a {
+//   @include breakpoint(small only) {
+//     font-size: 1.2rem;
+//   };
+// }
 
 /* Navigation - Top Bar  */
 .top-bar {
