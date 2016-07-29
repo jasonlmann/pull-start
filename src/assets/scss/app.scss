@@ -171,7 +171,7 @@ body, p, a {
   @include grid-row;
 }
 .project-title {
-  @include grid-column(12);
+  //@include grid-column(12);
   span {
     font-weight: normal;
     font-size: 1rem;
