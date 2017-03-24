@@ -276,20 +276,42 @@
     }
   }
 }
-
+#contact {
+    text-align: center;
+    .address {
+      font-size: .85rem;
+    }
+    strong {
+      font-weight: 700;
+      font-size: 1rem;
+      text-transform: uppercase;
+      color: $primary-color;
+    }
+}
+.button {
+  border-radius: $button-radius;
+  font-family: $header-font-family;
+  font-size: .85rem;
+  text-transform: uppercase;
+  padding: 1.2rem;
+}
 /* Social Links */
 
 
 /* Footer styles */
 #footer {
-  height: 40vh;
-
-  p {
+  background: $black;
+  // height: 10vh;
+  .row {
+    padding: 3rem 0;
+    color: $light-gray;
     text-align: center;
-    font-size: .7rem;
-    color: $dark-gray;
+    .social-icon {
+      font-size: 24px;
+    }
   }
 }
+
 /*  Accessibility Styles */
 .sr-only {
   display: none;
