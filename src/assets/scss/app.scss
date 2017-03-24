@@ -222,58 +222,48 @@
   }
 }
 
-/* Project list */
-.project-list-item {
-  @include grid-row;
-  padding: 3rem 0;
+/* Description */
+.description {
+  @include grid-column-row() ;
+  padding: 4rem 2rem;
+  p {
+    font-family: "Raleway";
+    color: $primary-color;
+    text-transform: uppercase;
+    text-align: center;
+  }
 }
-.project-header, .project-body {
+
+/* Bios */
+.bios {
   @include grid-row;
-}
-.project-title {
-  span {
-    font-weight: normal;
-    font-size: 1rem;
-    @include breakpoint(small) {
-      font-size: .8rem;
-      display: block;
+  .bio-item {
+    @include grid-column(12);
+    h4 {
+      color: $primary-color;
+      text-transform: uppercase;
+      font-size: 1rem;
+    }
+    p {
+      font-size: .9rem;
+    }
+    .bio-links {
+      margin-bottom: 1.2rem;
+      li a {
+        padding-left: 0;
+      }
+      i {
+        font-size: 24px;
+      }
+    }
+    @include breakpoint(large){
+      @include grid-column(4);
     }
   }
 }
-.project-image {
-  @include grid-column(12);
-  @include breakpoint(large up) {
-    @include grid-column(8);
-  }
-}
-.project-description {
-  @include grid-column(12);
-  @include breakpoint(large up) {
-    @include grid-column(4);
-  }
-}
 
-/* Past Projects */
-.film-detail {
-}
+/* Social Links */
 
-
-#about-us {
-  .accordion-title, .accordion-content {
-    color: $body-font-color;
-  }
-  .accordion-title {
-    color: $dark-gray;
-  }
-}
-
-/* People List */
-#people-list {
-  .accordion-title {
-    font-size: 1.2rem;
-    border: none;
-  }
-}
 
 /* Footer styles */
 #footer {
@@ -284,4 +274,9 @@
     font-size: .7rem;
     color: $dark-gray;
   }
+}
+/*  Accessibility Styles */
+.sr-only {
+  display: none;
+  height: 0;
 }
