@@ -78,6 +78,15 @@
   }
 }
 
+.title-bar {
+  strong {
+    text-transform: uppercase;
+  }
+  .menu {
+
+  }
+}
+
 /* Hero image */
 .hero {
   background-size: cover;
@@ -110,6 +119,7 @@
   h1 {
     color: $white;
     font-weight: 800;
+    font-family: "Montserrat";
     text-transform: uppercase;
     span {
       font-weight: 400;
@@ -160,6 +170,13 @@
     &:first-of-type {
       padding-top: 3rem;
     }
+
+  }
+}
+/* Portfolio */
+.portfolio {
+  .columns{
+    padding: 0;
 
   }
 }
