@@ -173,6 +173,21 @@
 //
 //   }
 // }
+
+// Off-canvas styles
+
+.off-canvas-absolute {
+  .menu {
+    li {
+      border-bottom: 1px dotted $dark-gray;
+    }
+    a {
+      color: $light-gray;
+    }
+  }
+}
+
+
 /* Portfolio */
 .portfolio {
   .portfolio-item {
