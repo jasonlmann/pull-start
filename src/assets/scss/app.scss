@@ -197,6 +197,11 @@
       p {
         line-height: 0;
       }
+      @include breakpoint(medium) {
+        h4 {
+          font-size: 1.8rem;
+        }
+      }
     }
     .item-image:after {
       content: '';
