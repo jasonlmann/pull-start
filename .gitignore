@@ -6,3 +6,4 @@ dist
 .ftppass
 *.swp
 /config.codekit3
+/src/.htaccess
