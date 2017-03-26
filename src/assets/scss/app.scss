@@ -266,6 +266,12 @@ $light-gray-background: #f5f5f5;
     text-transform: uppercase;
     text-align: center;
   }
+  @include breakpoint(medium) {
+    @include flex-grid-column(10);
+  }
+  @include breakpoint(large) {
+    @include flex-grid-column(8);
+  }
 }
 
 /* Bios */
