@@ -281,6 +281,19 @@ $light-gray-background: #f5f5f5;
   }
 }
 
+/* Project pages */
+.project-page {
+  h4, .project-status {
+    color: $primary-color;
+  }
+  .project-status {
+    font-family: "Raleway";
+  }
+}
+.project-text {
+  border-bottom: 1px solid $light-gray;
+  margin-bottom: 1.6rem;
+}
 /*  Accessibility Styles */
 .sr-only {
   display: none;
