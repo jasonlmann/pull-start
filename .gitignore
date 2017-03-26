@@ -7,3 +7,4 @@ dist
 *.swp
 /config.codekit3
 /src/.htaccess
+/.publish
