@@ -82,8 +82,11 @@
   strong {
     text-transform: uppercase;
   }
-  .menu {
-
+  @include breakpoint(medium) {
+    background-color: #38435c;
+    .title-bar-title, .menu a {
+      color: $white;
+    }
   }
 }
 
