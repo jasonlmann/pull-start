@@ -219,3 +219,11 @@ gulp.task('deploy2', function () {
       remotepath: '/tmp/'
     }));
 });
+
+// Use gulp-gh-pages for staging
+var ghPages = require('gulp-gh-pages');
+
+gulp.task('gh-deploy', function() {
+  return gulp.src('./dist/**/*')
+    .pipe(ghPages());
+});
