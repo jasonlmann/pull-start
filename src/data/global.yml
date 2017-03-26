@@ -3,11 +3,14 @@ project:
   project-title: Betting the Farm
   project-status: Feature documentary, 2012
   project-image: btf.jpg
+  project-slug: betting-the-farm
  -
   project-title: The Search
   project-status: In Production
   project-image: the-search.jpg
+  project-slug: the-search
  -
   project-title: Aging on an Island
   project-status: web, 2016
   project-image: aging-on-islands.jpg
+  project-slug: aging-on-islands
