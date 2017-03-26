@@ -280,9 +280,21 @@
   }
 }
 #contact {
+  padding-bottom: 2rem;
     text-align: center;
     .address {
       font-size: .85rem;
+      font-family: "Raleway";
+      padding-bottom: 1rem;
+    }
+    input, textarea {
+      padding: 1.6rem 1.2rem;
+      margin-bottom: 1rem;
+      background: $light-gray-background;
+      box-shadow: none;
+      color: $dark-gray;
+      border: 0;
+      border-radius: $global-radius;
     }
     strong {
       font-weight: 700;
