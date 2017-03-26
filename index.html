@@ -1,151 +1,212 @@
-<div class="row">
-  <div class="large-12 columns">
-    <h1>Welcome to Foundation for Sites</h1>
-  </div>
-</div>
 
-<div class="row">
-  <div class="large-12 columns">
-    <div class="callout">
-      <h3>We&rsquo;re stoked you want to try Foundation! </h3>
-      <p>To get going, this file (index.html) includes some basic styles you can modify, play around with, or totally destroy to get going.</p>
-      <p>Once you've exhausted the fun in this document, you should check out:</p>
-      <div class="row">
-        <div class="large-4 medium-4 columns">
-          <p><a href="http://foundation.zurb.com/docs">Foundation Documentation</a><br />Everything you need to know about using the framework.</p>
-        </div>
-        <div class="large-4 medium-4 columns">
-          <p><a href="http://zurb.com/university/code-skills">Foundation Code Skills</a><br />These online courses offer you a chance to better understand how Foundation works and how you can master it to create awesome projects.</p>
-        </div>
-        <div class="large-4 medium-4 columns">
-          <p><a href="http://foundation.zurb.com/forum">Foundation Forum</a><br />Join the Foundation community to ask a question or show off your knowlege.</p>
-        </div>
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> | Pull-Start Pictures</title>
+    <!-- Add Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Hind|Montserrat|Raleway:400,500,700" rel="stylesheet">
+    <!-- <link href="assets/foundation-icons/foundation-icons.css" rel="stylesheet"> -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/app.css">
+
+  </head>
+  <body>
+
+    <div class="title-bar">
+      <span class="title-bar-title"><a href="/"><strong><h4>Pull-Start Pictures</h4></strong></a></span>
+      <div class="top-bar-right show-for-large">
+        <ul class="menu">
+          <li><a href="#portfolio">Work</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#journal">Journal</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="https://facebook.com/pullstartpictures"><i class="fi-social-facebook social-icon"></i><span class="sr-only">Facebook</span></a></li>
+          <li><a href="#"><i class="fi-social-twitter social-icon"></i><span class="sr-only">Twitter</span></a></li>
+          
+        </ul>
       </div>
-      <div class="row">
-        <div class="large-4 medium-4 medium-push-2 columns">
-          <p><a href="http://github.com/zurb/foundation">Foundation on Github</a><br />Latest code, issue reports, feature requests and more.</p>
-        </div>
-        <div class="large-4 medium-4 medium-pull-2 columns">
-          <p><a href="https://twitter.com/ZURBfoundation">@zurbfoundation</a><br />Ping us on Twitter if you have questions. When you build something with this we'd love to see it (and send you a totally boss sticker).</p>
-        </div>
+    
+      <div class="title-bar-right hide-for-large">
+        <button class="menu-icon" type="button" data-open="offCanvasLeft"></button>
       </div>
     </div>
-  </div>
-</div>
+    
 
-<div class="row">
-  <div class="large-8 medium-8 columns">
-    <h5>Here&rsquo;s your basic grid:</h5>
-    <!-- Grid Example -->
+    <div class="off-canvas-wrapper">
 
-    <div class="row">
-      <div class="large-12 columns">
-        <div class="primary callout">
-          <p><strong>This is a twelve column section in a row.</strong> Each of these includes a div.callout element so you can see where the columns are - it's not required at all for the grid.</p>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="large-6 medium-6 columns">
-        <div class="primary callout">
-          <p>Six columns</p>
-        </div>
-      </div>
-      <div class="large-6 medium-6 columns">
-        <div class="primary callout">
-          <p>Six columns</p>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="large-4 medium-4 small-4 columns">
-        <div class="primary callout">
-          <p>Four columns</p>
-        </div>
-      </div>
-      <div class="large-4 medium-4 small-4 columns">
-        <div class="primary callout">
-          <p>Four columns</p>
-        </div>
-      </div>
-      <div class="large-4 medium-4 small-4 columns">
-        <div class="primary callout">
-          <p>Four columns</p>
-        </div>
-      </div>
-    </div>
+      <div class="off-canvas-absolute position-top" id="offCanvasLeft" data-off-canvas>
+        <button class="close-button" aria-label="Close menu" type="button" data-close>
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <nav>
+          <ul class="menu vertical">
+            <li><a href="#portfolio">Work</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#journal">Journal</a></li>
+            <li><a href="#contact">Contact</a></li>
+            
+            <li>
+              <ul class="submenu menu">
+                <li><a href="https://facebook.com/pullstartpictures"><i class="fi-social-facebook social-icon"></i><span class="sr-only">Facebook</span></a></li>
+                <li><a href="#"><i class="fi-social-twitter social-icon"></i><span class="sr-only">Twitter</span></a></li>
+                
+              </ul>
+            </li>
+          </ul>
+        </nav>
 
-    <hr />
-
-    <h5>We bet you&rsquo;ll need a form somewhere:</h5>
-    <form>
-      <div class="row">
-        <div class="large-12 columns">
-          <label>Input Label</label>
-          <input type="text" placeholder="large-12.columns" />
-        </div>
       </div>
-      <div class="row">
-        <div class="large-4 medium-4 columns">
-          <label>Input Label</label>
-          <input type="text" placeholder="large-4.columns" />
+
+      <div class="off-canvas-content" data-off-canvas-content>
+
+      
+      <section class="portfolio" id="portfolio">
+        <div class="row expanded">
+      
+          <div class="small-12 medium-6 large-4 columns portfolio-item">
+            <a href="/betting-the-farm.html">
+              <div class="item-caption">
+                <h4>Betting the Farm</h4>
+                <p>Feature documentary, 2012</p>
+              </div>
+              <div class="item-image">
+                <img src="assets/img/portfolio/btf.jpg" alt="Betting the Farm image">
+      
+              </div>
+            </a>
+          </div>
+      
+          <div class="small-12 medium-6 large-4 columns portfolio-item">
+            <a href="/the-search.html">
+              <div class="item-caption">
+                <h4>The Search</h4>
+                <p>In Production</p>
+              </div>
+              <div class="item-image">
+                <img src="assets/img/portfolio/the-search.jpg" alt="The Search image">
+      
+              </div>
+            </a>
+          </div>
+      
+          <div class="small-12 medium-6 large-4 columns portfolio-item">
+            <a href="/aging-on-islands.html">
+              <div class="item-caption">
+                <h4>Aging on an Island</h4>
+                <p>web, 2016</p>
+              </div>
+              <div class="item-image">
+                <img src="assets/img/portfolio/aging-on-islands.jpg" alt="Aging on an Island image">
+      
+              </div>
+            </a>
+          </div>
+      
         </div>
-        <div class="large-4 medium-4 columns">
-          <label>Input Label</label>
-          <input type="text" placeholder="large-4.columns" />
+      
+      </section>
+      
+      <section class="description main-section" id="about">
+        <p>Pull-Start Pictures is a Maine-based documentary production company. We have worked for the New York Times, Ford Foundation, and many Maine organizations.</p>
+        <p>Our independent work has been supported by IFP Spotlight, Sundance Institute, LEF Foundation, Chicken &amp; Egg, Working Films, and the Maine Community Foundation.</p>
+      </section>
+      
+      <section class="bios main-section" id="bios">
+        <div class="bio-item" id="bio-cec">
+          <h4>Cecily Pingree</h4>
+          <p>Cecily is a director, producer, and cinematographer of non-fiction films. She began her film career with Big Mouth Productions in New York City in 2004. Cecily has worked all over the world covering a wide variety of environmental, social, and humanitarian topics. She was invited to participate in the Sundance Creative Producer Labs and was the recipient of the Maine Arts Commission’s Media and Performing Arts Fellowship.</p>
+          <ul class="bio-links menu">
+            <li><a href="#" class="link-fb"><i class="fi-social-facebook" aria-hidden="true" title="Link to Facebook"></i><span class="sr-only">Facebook</span></a></li>
+            <li><a href="#" class="link-tw"><i class="fi-social-twitter" aria-hidden="true" title="Link to Twitter"></i><span class="sr-only">Twitter</span></a></li>
+            <li><a href="#" class="link-vm"><i class="fi-social-vimeo" aria-hidden="true" title="Link to Vimeo"></i><span class="sr-only">Vimeo</span></a></li>
+          </ul>
         </div>
-        <div class="large-4 medium-4 columns">
-          <div class="row collapse">
-            <label>Input Label</label>
-            <div class="input-group">
-              <input class="input-group-field" type="text" placeholder="input-group" />
-              <span class="input-group-label">.com</span>
+      
+        <div class="bio-item" id="bio-jas">
+          <h4>Jason Mann</h4>
+          <p>Jason co-produced &amp; co-directed "Betting The Farm," a feature documentary about struggling Maine dairy farmers, which premiered at the AFI-Discovery Channel Silverdocs Film Festival. He was director of photography and co-producer of "Lost Souls (Animas Perdidas)," which aired nationally on Independent Lens. Jason lives in Maine with his wife, two crazy kids, and cantankerous black Lab.</p>
+          <ul class="bio-links menu">
+            <li><a href="#" class="link-fb"><i class="fi-social-facebook" aria-hidden="true" title="Link to Facebook"></i><span class="sr-only">Facebook</span></a></li>
+            <li><a href="#" class="link-tw"><i class="fi-social-twitter" aria-hidden="true" title="Link to Twitter"></i><span class="sr-only">Twitter</span></a></li>
+            <li><a href="#" class="link-vm"><i class="fi-social-vimeo" aria-hidden="true" title="Link to Vimeo"></i><span class="sr-only">Vimeo</span></a></li>
+          </ul>
+        </div>
+      
+        <div class="bio-item" id="bio-linds">
+          <h4>Lindsay Steven Mann</h4>
+          <p>As a director, cinematographer, and editor, Lindsay has worked with The New York Times, Sports Illustrated, Rolling Stone Magazine, and PBS. He has filmed Bruce Springsteen in Asbury Park, operated for Haskell Wexler, ASC., and assisted on Martin Scorsese's "Shine a Light." Lindsay studied film at Boston University. He lives and works in Portland, ME and Brooklyn, NY with his wife and daughter.</p>
+          <ul class="bio-links menu">
+            <li><a href="#" class="link-fb"><i class="fi-social-facebook" aria-hidden="true" title="Link to Facebook"></i><span class="sr-only">Facebook</span></a></li>
+            <li><a href="#" class="link-tw"><i class="fi-social-twitter" aria-hidden="true" title="Link to Twitter"></i><span class="sr-only">Twitter</span></a></li>
+            <li><a href="#" class="link-vm"><i class="fi-social-vimeo" aria-hidden="true" title="Link to Vimeo"></i><span class="sr-only">Vimeo</span></a></li>
+          </ul>
+        </div>
+      </section>
+      
+      
+      <section class="main-section" id="contact">
+        <p class="address"><strong>Pull-Start Pictures</strong><br>
+        PO Box 364<br>
+        North Haven, ME 04853<br>
+        phone: (207) 613-4066<br>
+        email: info@pull-start.com</p>
+        <form class="">
+          <div class="row">
+            <div class="small-12 large-6 columns">
+              <label><span class="sr-only">Name</span>
+                <input type="text" placeholder="Name">
+              </label>
+            </div>
+            <div class=" small-12 large-6 columns">
+              <label><span class="sr-only">Email address</span>
+                <input type="email" placeholder="Email address here!">
+              </label>
             </div>
           </div>
+          <div class="row">
+            <div class="columns">
+              <label><span class="sr-only">What's up?</span>
+                <textarea placeholder="What's up?" rows="9"></textarea>
+              </label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="columns">
+              <label>
+                <button type="submit" value="Send us a message!" class="button">Send us a message!</button>
+              </label>
+            </div>
+      
+          </div>
+        </form>
+      
+      </section>
+      
+      
+      <section class="main-section" id="footer">
+        <div class="row expanded">
+          <div class="columns">
+            <div class="menu-centered">
+              <ul class="menu">
+                <li><a href="https://facebook.com/pullstartpictures"><i class="fi-social-facebook social-icon"></i><span class="sr-only">Facebook</span></a></li>
+                <li><a href="#"><i class="fi-social-twitter social-icon"></i><span class="sr-only">Twitter</span></a></li>
+                
+              </ul>
+            </div>
+            <span>© 2017 Pull-Start Pictures. All rights reserved.</span>
+      
+      
+          </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="large-12 columns">
-          <label>Select Box</label>
-          <select>
-            <option value="husker">Husker</option>
-            <option value="starbuck">Starbuck</option>
-            <option value="hotdog">Hot Dog</option>
-            <option value="apollo">Apollo</option>
-          </select>
-        </div>
-      </div>
-      <div class="row">
-        <div class="large-6 medium-6 columns">
-          <label>Choose Your Favorite</label>
-          <input type="radio" name="pokemon" value="Red" id="pokemonRed"><label for="pokemonRed">Radio 1</label>
-          <input type="radio" name="pokemon" value="Blue" id="pokemonBlue"><label for="pokemonBlue">Radio 2</label>
-        </div>
-        <div class="large-6 medium-6 columns">
-          <label>Check these out</label>
-          <input id="checkbox1" type="checkbox"><label for="checkbox1">Checkbox 1</label>
-          <input id="checkbox2" type="checkbox"><label for="checkbox2">Checkbox 2</label>
-        </div>
-      </div>
-      <div class="row">
-        <div class="large-12 columns">
-          <label>Textarea Label</label>
-          <textarea placeholder="small-12.columns"></textarea>
-        </div>
-      </div>
-    </form>
-  </div>
+      </section>
+      
 
-  <div class="large-4 medium-4 columns">
-    <h5>Try one of these buttons:</h5>
-    <p><a href="#" class="small button">Simple Button</a><br/>
-    <a href="#" class="medium success button">Success Btn</a><br/>
-    <a href="#" class="medium alert button">Alert Btn</a><br/>
-    <a href="#" class="medium secondary button">Secondary Btn</a></p>
-    <div class="callout">
-      <h5>So many components, girl!</h5>
-      <p>A whole kitchen sink of goodies comes with Foundation. Check out the docs to see them all, along with details on making them your own.</p>
-      <a href="http://foundation.zurb.com/docs/" class="small button">Go to Foundation Docs</a>
-    </div>
-  </div>
-</div>
+      </div><!-- end off canvas content -->
+    </div><!-- end off canvas wrap -->
+
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>
