@@ -1,16 +1,26 @@
 project:
  -
-  project-title: Betting the Farm
-  project-status: Feature documentary, 2012
-  project-image: btf.jpg
-  project-slug: betting-the-farm
- -
   project-title: The Search
-  project-status: In Production
+  project-status: (In Production, 2016)
   project-image: the-search.jpg
   project-slug: the-search
  -
+  project-title: Dying in Here
+  project-status: (In Production)
+  project-image: hospice.jpg
+  project-slug: dying-in-here
+ -
   project-title: Aging on an Island
-  project-status: web, 2016
+  project-status: (Web, 2016)
   project-image: aging-on-islands.jpg
-  project-slug: aging-on-islands
+  project-slug: aging-on-an-island
+ -
+  project-title: Betting the Farm
+  project-status: (Feature documentary, 2012)
+  project-image: btf.jpg
+  project-slug: betting-the-farm
+ -
+  project-title: Meet Your Farmer
+  project-status: (Web series, 2009)
+  project-image: myf.jpg
+  project-slug: meet-your-farmer
