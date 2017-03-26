@@ -90,160 +90,233 @@
   }
 }
 
-/* Hero image */
-.hero {
-  background-size: cover;
-  height: 66vh;
-  position: relative;
-  top: 0;
-  left: 0;
-  z-index: -100;
-  overflow: hidden;
-  @include breakpoint(small only) {
-    background: url(../img/steve_runs_comp.png) no-repeat;
-    background-size: cover;
-    background-position: center;
-  }
-  &:before {
-    content: '';
-		position: absolute;
-		top: 0;
-		right: 0;
-		bottom: 0;
-		left: 0;
-    background: -moz-radial-gradient(center, ellipse cover,  rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.9) 100%); /* FF3.6-15 */
-    background: -webkit-radial-gradient(center, ellipse cover,  rgba(0,0,0,0.25) 0%,rgba(0,0,0,0.9) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: radial-gradient(ellipse at center,  rgba(0,0,0,0.25) 0%,rgba(0,0,0,0.9) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80000000', endColorstr='#cc000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-    z-index: 10;
+// /* Hero image */
+// .hero {
+//   background-size: cover;
+//   height: 66vh;
+//   position: relative;
+//   top: 0;
+//   left: 0;
+//   z-index: -100;
+//   overflow: hidden;
+//   @include breakpoint(small only) {
+//     background: url(../img/steve_runs_comp.png) no-repeat;
+//     background-size: cover;
+//     background-position: center;
+//   }
+//   &:before {
+//     content: '';
+// 		position: absolute;
+// 		top: 0;
+// 		right: 0;
+// 		bottom: 0;
+// 		left: 0;
+//     background: -moz-radial-gradient(center, ellipse cover,  rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.9) 100%); /* FF3.6-15 */
+//     background: -webkit-radial-gradient(center, ellipse cover,  rgba(0,0,0,0.25) 0%,rgba(0,0,0,0.9) 100%); /* Chrome10-25,Safari5.1-6 */
+//     background: radial-gradient(ellipse at center,  rgba(0,0,0,0.25) 0%,rgba(0,0,0,0.9) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+//     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80000000', endColorstr='#cc000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+//     z-index: 10;
+//     }
+//
+//
+//   h1 {
+//     color: $white;
+//     font-weight: 800;
+//     font-family: "Montserrat";
+//     text-transform: uppercase;
+//     span {
+//       font-weight: 400;
+//       letter-spacing: .5rem;
+//       font-style: italic;
+//     }
+//   }
+//   .tagline {
+//     color: $white;
+//   }
+//
+//   .bg_video {
+//     position: absolute;
+//     top: 50%;
+//     left: 50%;
+//     width: auto;
+//     height: auto;
+//     min-width: 100%;
+//     min-height: 100%;
+//     -webkit-transform: translate(-50%, -50%);
+//     -moz-transform: translate(-50%, -50%);
+//     -ms-transform: translate(-50%, -50%);
+//     transform: translate(-50%, -50%);
+//     @include breakpoint(small only) {
+//       display: none;
+//     }
+//   }
+//
+//   .logotype {
+//     z-index: 100;
+//     text-align: center;
+//     padding: 2rem;
+//     position: absolute;
+//     top: 50%;
+//     left: 50%;
+//     transform: translate(-50%, -50%);
+//   }
+// }
+
+
+// .main-section {
+//   padding-top: 2rem;
+//   h2, h3, h4 {
+//     text-transform: uppercase;
+//     color: $dark-gray;
+//   }
+//   h2 {
+//     &:first-of-type {
+//       padding-top: 3rem;
+//     }
+//
+//   }
+// }
+
+// Off-canvas styles
+
+.off-canvas-absolute {
+  .menu {
+    li {
+      border-bottom: 1px dotted $dark-gray;
     }
-
-
-  h1 {
-    color: $white;
-    font-weight: 800;
-    font-family: "Montserrat";
-    text-transform: uppercase;
-    span {
-      font-weight: 400;
-      letter-spacing: .5rem;
-      font-style: italic;
+    a {
+      color: $light-gray;
     }
-  }
-  .tagline {
-    color: $white;
-  }
-
-  .bg_video {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: auto;
-    height: auto;
-    min-width: 100%;
-    min-height: 100%;
-    -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    @include breakpoint(small only) {
-      display: none;
-    }
-  }
-
-  .logotype {
-    z-index: 100;
-    text-align: center;
-    padding: 2rem;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
   }
 }
 
 
-.main-section {
-  padding-top: 2rem;
-  h2, h3, h4 {
-    text-transform: uppercase;
-    color: $dark-gray;
-  }
-  h2 {
-    &:first-of-type {
-      padding-top: 3rem;
-    }
-
-  }
-}
 /* Portfolio */
 .portfolio {
-  .columns{
+  .portfolio-item {
     padding: 0;
+    position: relative;
+    z-index: 1;
 
-  }
-}
+    .item-caption {
+      position: absolute;
+      width: 100%;
+      bottom: 2rem;
+      top: auto;
+      z-index: 3;
+      color: $white;
+      text-align: center;
 
-/* Project list */
-.project-list-item {
-  @include grid-row;
-  padding: 3rem 0;
-}
-.project-header, .project-body {
-  @include grid-row;
-}
-.project-title {
-  span {
-    font-weight: normal;
-    font-size: 1rem;
-    @include breakpoint(small) {
-      font-size: .8rem;
-      display: block;
+      h4 {
+        font-size: 2.6rem;
+        text-transform: uppercase;
+        margin: .5rem auto .1rem auto;
+      }
+      p {
+        line-height: 0;
+      }
+      @include breakpoint(medium) {
+        h4 {
+          font-size: 1.8rem;
+        }
+      }
+    }
+    .item-image:after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: 2;
+      background-color: pink;
+      opacity: 0;
+      -webkit-transition: opacity 0.6s;
+    }
+    .item-image:after, portfolio-item:hover {
+      background: linear-gradient(rgba(0, 0, 0, 0) 0%, #191a1c 100%);
+      opacity: 1;
     }
   }
 }
-.project-image {
-  @include grid-column(12);
-  @include breakpoint(large up) {
-    @include grid-column(8);
-  }
-}
-.project-description {
-  @include grid-column(12);
-  @include breakpoint(large up) {
-    @include grid-column(4);
+
+/* Description */
+.description {
+  @include grid-column-row() ;
+  padding: 4rem 2rem;
+  p {
+    font-family: "Raleway";
+    color: $primary-color;
+    text-transform: uppercase;
+    text-align: center;
   }
 }
 
-/* Past Projects */
-.film-detail {
-}
-
-
-#about-us {
-  .accordion-title, .accordion-content {
-    color: $body-font-color;
+/* Bios */
+.bios {
+  @include grid-row;
+  .bio-item {
+    @include grid-column(12);
+    h4 {
+      color: $primary-color;
+      text-transform: uppercase;
+      font-size: 1rem;
+    }
+    p {
+      font-size: .9rem;
+    }
+    .bio-links {
+      margin-bottom: 1.2rem;
+      li a {
+        padding-left: 0;
+      }
+      i {
+        font-size: 24px;
+      }
+    }
+    @include breakpoint(large){
+      @include grid-column(4);
+    }
   }
-  .accordion-title {
-    color: $dark-gray;
-  }
 }
+#contact {
+    text-align: center;
+    .address {
+      font-size: .85rem;
+    }
+    strong {
+      font-weight: 700;
+      font-size: 1rem;
+      text-transform: uppercase;
+      color: $primary-color;
+    }
+}
+.button {
+  border-radius: $button-radius;
+  font-family: $header-font-family;
+  font-size: .85rem;
+  text-transform: uppercase;
+  padding: 1.2rem;
+}
+/* Social Links */
 
-/* People List */
-#people-list {
-  .accordion-title {
-    font-size: 1.2rem;
-    border: none;
-  }
-}
 
 /* Footer styles */
 #footer {
-  height: 40vh;
-
-  p {
+  background: $black;
+  // height: 10vh;
+  .row {
+    padding: 3rem 0;
+    color: $light-gray;
     text-align: center;
-    font-size: .7rem;
-    color: $dark-gray;
+    .social-icon {
+      font-size: 24px;
+    }
   }
+}
+
+/*  Accessibility Styles */
+.sr-only {
+  display: none;
+  height: 0;
 }

@@ -6,10 +6,13 @@
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pull-Start Pictures</title>
+    <title> | Pull-Start Pictures</title>
     <!-- Add Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Hind|Montserrat:400,500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Hind|Montserrat|Raleway:400,500,700" rel="stylesheet">
+    <!-- <link href="{{root}}assets/foundation-icons/foundation-icons.css" rel="stylesheet"> -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css" rel="stylesheet">
     <link rel="stylesheet" href="{{root}}assets/css/app.css">
+
   </head>
   <body>
 
@@ -24,12 +27,12 @@
         </button>
         <nav>
           <ul class="menu vertical">
-            <li><a href="#">Work</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Journal</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">FB</a></li>
-            <li><a href="#">Tweet</a></li>
+            {{>primary-nav }}
+            <li>
+              <ul class="submenu menu">
+                {{>social-links }}
+              </ul>
+            </li>
           </ul>
         </nav>
 

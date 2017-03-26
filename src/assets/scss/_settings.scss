@@ -50,7 +50,7 @@ $global-font-size: 100%;
 $global-width: rem-calc(1200);
 $global-lineheight: 1.5;
 $foundation-palette: (
-  primary: #1779ba,
+  primary: #3f4b69,
   secondary: #767676,
   success: #3adb76,
   warning: #ffae00,
@@ -62,7 +62,7 @@ $dark-gray: #393939;
 $black: #0a0a0a;
 $white: #fefefe;
 $body-background: $white;
-$body-font-color: darken( $dark-gray, 30%);
+$body-font-color: #656565;
 $body-font-family: 'Hind', 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
 $body-antialiased: true;
 $global-margin: 1rem;
@@ -247,7 +247,7 @@ $button-background: $primary-color;
 $button-background-hover: scale-color($button-background, $lightness: -15%);
 $button-color: $white;
 $button-color-alt: $black;
-$button-radius: $global-radius;
+$button-radius: 100px;
 $button-sizes: (
   tiny: 0.6rem,
   small: 0.75rem,
