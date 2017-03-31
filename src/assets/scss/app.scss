@@ -160,9 +160,11 @@ $light-gray-background: #f5f5f5;
 
 /* Bios */
 .bios {
-  @include grid-row;
+  @include flex-grid-row;
   .bio-item {
-    @include grid-column(12);
+    @include flex-grid-column(12);
+    position: relative;
+    padding-bottom: 4rem;
     h4 {
       color: $primary-color;
       text-transform: uppercase;
@@ -177,11 +179,13 @@ $light-gray-background: #f5f5f5;
         padding-left: 0;
       }
       i {
-        font-size: 24px;
+        font-size: 20px;
       }
+      position: absolute;
+      bottom: 0;
     }
     @include breakpoint(large){
-      @include grid-column(4);
+      @include flex-grid-column(4);
     }
   }
 }
