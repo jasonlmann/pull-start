@@ -53,31 +53,6 @@
 @include motion-ui-transitions;
 @include motion-ui-animations;
 
-// body, p, a {
-//   @include breakpoint(small only) {
-//     font-size: 1.2rem;
-//   };
-// }
-
-/* Navigation - Top Bar  */
-// .top-bar {
-//   width: 100%;
-//   ul {
-//     li {
-//       a, .button {
-//         color: $dark-gray;
-//         text-transform: uppercase;
-//         font-weight: bold;
-//         background-color: transparent;
-//         @include breakpoint(small) {
-//           padding-left: 0;
-//           font-size: .8rem;
-//         }
-//       }
-//     }
-//   }
-// }
-
 /* Additional color variables */
 $light-gray-background: #f5f5f5;
 
