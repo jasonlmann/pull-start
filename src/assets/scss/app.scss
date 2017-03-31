@@ -211,22 +211,16 @@ $light-gray-background: #f5f5f5;
       @include breakpoint(large) {
         @include flex-grid-column(8);
       }
+      #thankyou_message {
+        display: none;
+      }
+      input, textarea {
+        padding: 1.6rem 1.2rem;
+        margin-bottom: 1rem;
+      }
+
     }
-    input, textarea {
-      padding: 1.6rem 1.2rem;
-      margin-bottom: 1rem;
-      background: $light-gray-background;
-      box-shadow: none;
-      color: $dark-gray;
-      border: 0;
-      border-radius: $global-radius;
-    }
-    strong {
-      font-weight: 700;
-      font-size: 1rem;
-      text-transform: uppercase;
-      color: $primary-color;
-    }
+
 }
 .button {
   border-radius: $button-radius;
@@ -236,6 +230,9 @@ $light-gray-background: #f5f5f5;
   text-transform: uppercase;
   padding: 1.2rem;
 }
+
+
+
 /* Social Links */
 
 

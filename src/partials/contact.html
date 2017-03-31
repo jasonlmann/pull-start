@@ -5,35 +5,80 @@
     North Haven, ME 04853<br>
     phone: (207) 613-4066<br>
     email: info@pull-start.com</p>
-    <form class="">
+    <!-- <form class="" id="gform" method="POST" action="https://script.google.com/macros/s/AKfycbwSmjORfWvHk4CjiVL2LJztyMdSyxtjiESgqQba0ItrYqENYiA/exec" data-abide novalidate>
+      <div data-abide-error class="alert callout" style="display: none;">
+    <p><i class="fi-alert"></i> There are some errors in your form.</p>
+      </div>
       <div class="row">
         <div class="small-12 large-6 columns">
           <label><span class="sr-only">Name</span>
-            <input type="text" placeholder="Name">
+            <input type="text" placeholder="Name" name="name" required >
+            <span class="form-error">This field is required.</span>
           </label>
         </div>
         <div class=" small-12 large-6 columns">
           <label><span class="sr-only">Email address</span>
-            <input type="email" placeholder="Email address here!">
+            <input type="email" placeholder="Email address here!" name="email" pattern="email" required >
           </label>
         </div>
       </div>
       <div class="row">
         <div class="columns">
           <label><span class="sr-only">What's up?</span>
-            <textarea placeholder="What's up?" rows="9"></textarea>
+            <textarea placeholder="What's up?" rows="9" name="message"></textarea>
           </label>
         </div>
       </div>
       <div class="row">
         <div class="columns">
           <label>
-            <button type="submit" value="Send us a message!" class="button">Send us a message!</button>
+            <button type="submit" value="Send us a message!" class="button" name="submit">Send us a message!</button>
           </label>
         </div>
 
       </div>
     </form>
-  </div>
+    <div id="thankyou_message">
+      <h5>Got it.</h5>
+      <p>Your message has been sent. We'll get back to you as soon as we can!</p>
+    </div> -->
 
+    <form data-abide="ajax" novalidate id="gform" method="POST" action="https://script.google.com/macros/s/AKfycbwSmjORfWvHk4CjiVL2LJztyMdSyxtjiESgqQba0ItrYqENYiA/exec">
+      <div data-abide-error class="alert callout" style="display: none;">
+        <p><i class="fi-alert"></i> There are some errors in your form.</p>
+      </div>
+      <div class="row">
+        <div class="small-12 large-6 columns">
+          <label>
+            <input type="text" placeholder="Name" required name="name">
+            <span class="form-error">Don't forget to tell us your name!</span>
+          </label>
+        </div>
+        <div class="small-12 large-6 columns">
+          <label>
+            <input type="text" placeholder="Email address" aria-describedby="exampleHelpTex" required pattern="email" name="email">
+            <span class="form-error">Make sure your email address is spelled correctly.</span>
+          </label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="columns">
+          <label><span class="sr-only">What's up?</span>
+            <textarea placeholder="What's up?" rows="9" name="message" ></textarea>
+          </label>
+        </div>
+      </div>
+
+      <div class="row">
+        <fieldset class="columns">
+          <button class="button" type="submit" value="Submit">Send us a message!</button>
+        </fieldset>
+
+      </div>
+    </form>
+    <div id="thankyou_message" class="callout success">
+      <h5>Got it!</h5>
+      <p>Your message has been sent. We'll get back to you as soon as we can!</p>
+    </div>
+  </div>
 </section>
