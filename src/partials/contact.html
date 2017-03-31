@@ -42,7 +42,10 @@
       <h5>Got it.</h5>
       <p>Your message has been sent. We'll get back to you as soon as we can!</p>
     </div> -->
-
+    <div id="thankyou_message" class="callout success">
+      <h5>Got it!</h5>
+      <p>Your message has been sent. We'll get back to you as soon as we can!</p>
+    </div>
     <form data-abide="ajax" novalidate id="gform" method="POST" action="https://script.google.com/macros/s/AKfycbwSmjORfWvHk4CjiVL2LJztyMdSyxtjiESgqQba0ItrYqENYiA/exec">
       <div data-abide-error class="alert callout" style="display: none;">
         <p><i class="fi-alert"></i> There are some errors in your form.</p>
@@ -50,13 +53,13 @@
       <div class="row">
         <div class="small-12 large-6 columns">
           <label>
-            <input type="text" placeholder="Name" required name="name">
+            <input type="text" placeholder="Name" required name="name" id="name">
             <span class="form-error">Don't forget to tell us your name!</span>
           </label>
         </div>
         <div class="small-12 large-6 columns">
           <label>
-            <input type="text" placeholder="Email address" aria-describedby="exampleHelpTex" required pattern="email" name="email">
+            <input type="text" placeholder="Email address" aria-describedby="exampleHelpTex" required pattern="email" name="email" id="email">
             <span class="form-error">Make sure your email address is spelled correctly.</span>
           </label>
         </div>
@@ -64,7 +67,7 @@
       <div class="row">
         <div class="columns">
           <label><span class="sr-only">What's up?</span>
-            <textarea placeholder="What's up?" rows="9" name="message" ></textarea>
+            <textarea placeholder="What's up?" rows="9" name="message" id="message"></textarea>
           </label>
         </div>
       </div>
@@ -76,9 +79,6 @@
 
       </div>
     </form>
-    <div id="thankyou_message" class="callout success">
-      <h5>Got it!</h5>
-      <p>Your message has been sent. We'll get back to you as soon as we can!</p>
-    </div>
+
   </div>
 </section>

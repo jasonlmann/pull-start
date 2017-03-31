@@ -17,3 +17,44 @@ $(function() {
     }
   });
 });
+
+//SUBMIT contact form to Slack channel
+
+$(document)
+.bind("submit", function(e) {
+  e.preventDefault();
+  console.log("submit intercepted");
+})
+.bind("formvalid.zf.abide", function(e,$form) {
+  // ajax submit
+  var name = $("input#name").val();
+  var email = $("input#email").val();
+  var message = $("textarea#message").val();
+
+  //slack options
+  var formData = '*Name:* ' + name + '\n*Email:* ' + email + '\n*Message:* ' + message;
+
+  $.ajax({
+    url: 'https://hooks.slack.com/services/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',
+    type: 'POST',
+    data: JSON.stringify({
+      text: formData,
+      username: name,
+      icon_emoji: ':ghost:'
+    }),
+    success: function() {
+                    // Enable button & show success message
+                    $("#thankyou_message").css("display", "block");
+                    //clear all fields
+                    $('#gform').trigger("reset");
+    },
+    error: function() {
+                    // Fail message
+
+                    //clear all fields
+                    // $('#contactForm').trigger("reset");
+    },
+    dataType: "text"
+  });
+
+});
