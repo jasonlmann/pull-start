@@ -88,7 +88,6 @@ $light-gray-background: #f5f5f5;
   }
 }
 
-
 /* Portfolio */
 .portfolio {
   .portfolio-item {
@@ -162,7 +161,8 @@ $light-gray-background: #f5f5f5;
 .bios {
   @include flex-grid-row;
   .bio-item {
-    @include flex-grid-column(12);
+    @include flex-grid-column(10);
+    @include grid-column-position(center);
     position: relative;
     padding-bottom: 4rem;
     h4 {
