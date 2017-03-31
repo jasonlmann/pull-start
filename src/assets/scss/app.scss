@@ -193,7 +193,7 @@ $light-gray-background: #f5f5f5;
 /* Contact Styles*/
 
 #contact {
-  @include grid-row();
+  @include flex-grid-row();
   padding-bottom: 2rem;
     text-align: center;
     .address {
@@ -202,7 +202,7 @@ $light-gray-background: #f5f5f5;
       padding-bottom: 1rem;
     }
     .contact-wrap {
-      @include flex-grid-column(12);
+      @include flex-grid-column(11);
       @include grid-column-position(center);
 
       @include breakpoint(medium) {
