@@ -9,8 +9,8 @@
       The Search | Pull-Start Pictures</title>
     <!-- Add Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Hind|Montserrat|Raleway:400,500,700" rel="stylesheet">
-    <!-- <link href="assets/foundation-icons/foundation-icons.css" rel="stylesheet"> -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css" rel="stylesheet">
+    <script src="https://use.fontawesome.com/f5aa39c4bf.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css">
     <link rel="stylesheet" href="assets/css/app.css">
 
   </head>
@@ -25,15 +25,15 @@
            <!-- <li><a href="/#journal">Journal</a></li> -->
            <li><a href="../#contact">Contact</a></li>
           
-          <li><a href="https://facebook.com/pullstartpictures"><i class="fi-social-facebook social-icon"></i><span class="sr-only">Facebook</span></a></li>
-          <li><a href="https://twitter.com/pullstartpics"><i class="fi-social-twitter social-icon"></i><span class="sr-only">Twitter</span></a></li>
-          <li><a href="https://vimeo.com/pullstart" ><i class="fi-social-vimeo social-icon"></i><span class="sr-only">Vimeo</span></a></li>
+          <li><a href="https://facebook.com/pullstartpictures"><i class="fa fa-facebook social-icon" aria-hidden="true"></i><span class="sr-only">Facebook</span></a></li>
+          <li><a href="https://twitter.com/pullstartpics"><i class="fa fa-twitter social-icon" aria-hidden="true"></i><span class="sr-only">Twitter</span></a></li>
+          <li><a href="https://vimeo.com/pullstart" ><i class="fa fa-vimeo social-icon" aria-hidden="true"></i><span class="sr-only">Vimeo</span></a></li>
           
         </ul>
       </div>
     
       <div class="title-bar-right hide-for-large">
-        <button class="menu-icon" type="button" data-open="offCanvasLeft"></button>
+        <button class="menu-icon" type="button" data-toggle="offCanvasLeft"></button>
       </div>
     </div>
     
@@ -41,11 +41,8 @@
     <div class="off-canvas-wrapper">
 
       <div class="off-canvas-absolute position-top" id="offCanvasLeft" data-off-canvas>
-        <button class="close-button" aria-label="Close menu" type="button" data-close>
-          <span aria-hidden="true">&times;</span>
-        </button>
         <nav>
-          <ul class="menu vertical">
+          <ul class="menu vertical" data-close-on-click="true">
              <li><a href="../#portfolio">Work</a></li>
              <li><a href="../#about">About</a></li>
              <!-- <li><a href="/#journal">Journal</a></li> -->
@@ -53,9 +50,9 @@
             
             <li>
               <ul class="submenu menu">
-                <li><a href="https://facebook.com/pullstartpictures"><i class="fi-social-facebook social-icon"></i><span class="sr-only">Facebook</span></a></li>
-                <li><a href="https://twitter.com/pullstartpics"><i class="fi-social-twitter social-icon"></i><span class="sr-only">Twitter</span></a></li>
-                <li><a href="https://vimeo.com/pullstart" ><i class="fi-social-vimeo social-icon"></i><span class="sr-only">Vimeo</span></a></li>
+                <li><a href="https://facebook.com/pullstartpictures"><i class="fa fa-facebook social-icon" aria-hidden="true"></i><span class="sr-only">Facebook</span></a></li>
+                <li><a href="https://twitter.com/pullstartpics"><i class="fa fa-twitter social-icon" aria-hidden="true"></i><span class="sr-only">Twitter</span></a></li>
+                <li><a href="https://vimeo.com/pullstart" ><i class="fa fa-vimeo social-icon" aria-hidden="true"></i><span class="sr-only">Vimeo</span></a></li>
                 
               </ul>
             </li>
@@ -68,9 +65,7 @@
 
       <div class="row project-main project-page">
         <div class="small-12 large-8 columns">
-          <div class="responsive-embed widescreen">
-            <div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://www.youtube.com/embed/iejr3rWfoX4?rel=0&amp;controls=0?ecver=2" width="640" height="360" frameborder="0" style="position:absolute;width:100%;height:100%;left:0" allowfullscreen></iframe></div>
-          </div>
+          <img src="assets/img/portfolio/the-search.jpg" alt="Migrants on the rescue ship Aquarius in the Mediterranean">
         </div>
       
         <div class="large-4 columns">
@@ -88,9 +83,9 @@
           <div class="columns">
             <div class="menu-centered">
               <ul class="menu">
-                <li><a href="https://facebook.com/pullstartpictures"><i class="fi-social-facebook social-icon"></i><span class="sr-only">Facebook</span></a></li>
-                <li><a href="https://twitter.com/pullstartpics"><i class="fi-social-twitter social-icon"></i><span class="sr-only">Twitter</span></a></li>
-                <li><a href="https://vimeo.com/pullstart" ><i class="fi-social-vimeo social-icon"></i><span class="sr-only">Vimeo</span></a></li>
+                <li><a href="https://facebook.com/pullstartpictures"><i class="fa fa-facebook social-icon" aria-hidden="true"></i><span class="sr-only">Facebook</span></a></li>
+                <li><a href="https://twitter.com/pullstartpics"><i class="fa fa-twitter social-icon" aria-hidden="true"></i><span class="sr-only">Twitter</span></a></li>
+                <li><a href="https://vimeo.com/pullstart" ><i class="fa fa-vimeo social-icon" aria-hidden="true"></i><span class="sr-only">Vimeo</span></a></li>
                 
               </ul>
             </div>
@@ -104,7 +99,6 @@
 
       </div><!-- end off canvas content -->
     </div><!-- end off canvas wrap -->
-
     <script src="assets/js/app.js"></script>
   </body>
 </html>

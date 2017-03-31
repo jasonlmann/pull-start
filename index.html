@@ -9,8 +9,8 @@
       </title>
     <!-- Add Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Hind|Montserrat|Raleway:400,500,700" rel="stylesheet">
-    <!-- <link href="assets/foundation-icons/foundation-icons.css" rel="stylesheet"> -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css" rel="stylesheet">
+    <script src="https://use.fontawesome.com/f5aa39c4bf.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css">
     <link rel="stylesheet" href="assets/css/app.css">
 
   </head>
@@ -25,15 +25,15 @@
            <!-- <li><a href="/#journal">Journal</a></li> -->
            <li><a href="#contact">Contact</a></li>
           
-          <li><a href="https://facebook.com/pullstartpictures"><i class="fi-social-facebook social-icon"></i><span class="sr-only">Facebook</span></a></li>
-          <li><a href="https://twitter.com/pullstartpics"><i class="fi-social-twitter social-icon"></i><span class="sr-only">Twitter</span></a></li>
-          <li><a href="https://vimeo.com/pullstart" ><i class="fi-social-vimeo social-icon"></i><span class="sr-only">Vimeo</span></a></li>
+          <li><a href="https://facebook.com/pullstartpictures"><i class="fa fa-facebook social-icon" aria-hidden="true"></i><span class="sr-only">Facebook</span></a></li>
+          <li><a href="https://twitter.com/pullstartpics"><i class="fa fa-twitter social-icon" aria-hidden="true"></i><span class="sr-only">Twitter</span></a></li>
+          <li><a href="https://vimeo.com/pullstart" ><i class="fa fa-vimeo social-icon" aria-hidden="true"></i><span class="sr-only">Vimeo</span></a></li>
           
         </ul>
       </div>
     
       <div class="title-bar-right hide-for-large">
-        <button class="menu-icon" type="button" data-open="offCanvasLeft"></button>
+        <button class="menu-icon" type="button" data-toggle="offCanvasLeft"></button>
       </div>
     </div>
     
@@ -41,11 +41,8 @@
     <div class="off-canvas-wrapper">
 
       <div class="off-canvas-absolute position-top" id="offCanvasLeft" data-off-canvas>
-        <button class="close-button" aria-label="Close menu" type="button" data-close>
-          <span aria-hidden="true">&times;</span>
-        </button>
         <nav>
-          <ul class="menu vertical">
+          <ul class="menu vertical" data-close-on-click="true">
              <li><a href="#portfolio">Work</a></li>
              <li><a href="#about">About</a></li>
              <!-- <li><a href="/#journal">Journal</a></li> -->
@@ -53,9 +50,9 @@
             
             <li>
               <ul class="submenu menu">
-                <li><a href="https://facebook.com/pullstartpictures"><i class="fi-social-facebook social-icon"></i><span class="sr-only">Facebook</span></a></li>
-                <li><a href="https://twitter.com/pullstartpics"><i class="fi-social-twitter social-icon"></i><span class="sr-only">Twitter</span></a></li>
-                <li><a href="https://vimeo.com/pullstart" ><i class="fi-social-vimeo social-icon"></i><span class="sr-only">Vimeo</span></a></li>
+                <li><a href="https://facebook.com/pullstartpictures"><i class="fa fa-facebook social-icon" aria-hidden="true"></i><span class="sr-only">Facebook</span></a></li>
+                <li><a href="https://twitter.com/pullstartpics"><i class="fa fa-twitter social-icon" aria-hidden="true"></i><span class="sr-only">Twitter</span></a></li>
+                <li><a href="https://vimeo.com/pullstart" ><i class="fa fa-vimeo social-icon" aria-hidden="true"></i><span class="sr-only">Vimeo</span></a></li>
                 
               </ul>
             </li>
@@ -74,7 +71,7 @@
             <a href="the-search.html">
               <div class="item-caption">
                 <h4>The Search</h4>
-                <p>(In Production, 2016)</p>
+                <p>(in production)</p>
               </div>
               <div class="item-image">
                 <img src="assets/img/portfolio/the-search.jpg" alt="The Search image">
@@ -87,7 +84,7 @@
             <a href="dying-in-here.html">
               <div class="item-caption">
                 <h4>Dying in Here</h4>
-                <p>(In Production)</p>
+                <p>(in production)</p>
               </div>
               <div class="item-image">
                 <img src="assets/img/portfolio/hospice.jpg" alt="Dying in Here image">
@@ -97,10 +94,23 @@
           </div>
       
           <div class="small-12 medium-6 large-4 columns portfolio-item">
+            <a href="island-of-two.html">
+              <div class="item-caption">
+                <h4>Island of Two</h4>
+                <p>(in development)</p>
+              </div>
+              <div class="item-image">
+                <img src="assets/img/portfolio/island-of-two.jpg" alt="Island of Two image">
+      
+              </div>
+            </a>
+          </div>
+      
+          <div class="small-12 medium-6 large-4 columns portfolio-item">
             <a href="aging-on-an-island.html">
               <div class="item-caption">
                 <h4>Aging on an Island</h4>
-                <p>(Web, 2016)</p>
+                <p>(web, 2016)</p>
               </div>
               <div class="item-image">
                 <img src="assets/img/portfolio/aging-on-islands.jpg" alt="Aging on an Island image">
@@ -113,7 +123,7 @@
             <a href="betting-the-farm.html">
               <div class="item-caption">
                 <h4>Betting the Farm</h4>
-                <p>(Feature documentary, 2012)</p>
+                <p>(feature documentary, 2012)</p>
               </div>
               <div class="item-image">
                 <img src="assets/img/portfolio/btf.jpg" alt="Betting the Farm image">
@@ -126,7 +136,7 @@
             <a href="meet-your-farmer.html">
               <div class="item-caption">
                 <h4>Meet Your Farmer</h4>
-                <p>(Web series, 2009)</p>
+                <p>(web series, 2009)</p>
               </div>
               <div class="item-image">
                 <img src="assets/img/portfolio/myf.jpg" alt="Meet Your Farmer image">
@@ -149,9 +159,9 @@
           <h4>Cecily Pingree</h4>
           <p>Cecily is a director, producer, and cinematographer of non-fiction films. She began her film career with Big Mouth Productions in New York City in 2004. Cecily has worked all over the world covering a wide variety of environmental, social, and humanitarian topics. She was invited to participate in the Sundance Creative Producer Labs and was the recipient of the Maine Arts Commission’s Media and Performing Arts Fellowship.</p>
           <ul class="bio-links menu">
-            <li><a href="#" class="link-fb"><i class="fi-social-facebook" aria-hidden="true" title="Link to Facebook"></i><span class="sr-only">Facebook</span></a></li>
-            <!-- <li><a href="#" class="link-tw"><i class="fi-social-twitter" aria-hidden="true" title="Link to Twitter"></i><span class="sr-only">Twitter</span></a></li> -->
-            <li><a href="#" class="link-vm"><i class="fi-social-vimeo" aria-hidden="true" title="Link to Vimeo"></i><span class="sr-only">Vimeo</span></a></li>
+            <li><a href="#" class="link-fb"><i class="fa fa-facebook" aria-hidden="true" title="Link to Facebook"></i><span class="sr-only">Facebook</span></a></li>
+            <!-- <li><a href="#" class="link-tw"><i class="fa fa-twitter" aria-hidden="true" title="Link to Twitter"></i><span class="sr-only">Twitter</span></a></li> -->
+            <li><a href="#" class="link-vm"><i class="fa fa-vimeo" aria-hidden="true" title="Link to Vimeo"></i><span class="sr-only">Vimeo</span></a></li>
           </ul>
         </div>
       
@@ -159,9 +169,9 @@
           <h4>Jason Mann</h4>
           <p>Jason co-produced &amp; co-directed "Betting The Farm," a feature documentary about struggling Maine dairy farmers, which premiered at the AFI-Discovery Channel Silverdocs Film Festival. He was director of photography and co-producer of "Lost Souls (Animas Perdidas)," which aired nationally on Independent Lens. Jason lives in Maine with his wife, two crazy kids, and cantankerous black Lab.</p>
           <ul class="bio-links menu">
-            <!-- <li><a href="#" class="link-fb"><i class="fi-social-facebook" aria-hidden="true" title="Link to Facebook"></i><span class="sr-only">Facebook</span></a></li> -->
-            <li><a href="https://twitter.com/jasonlmann" class="link-tw"><i class="fi-social-twitter" aria-hidden="true" title="Link to Twitter"></i><span class="sr-only">Twitter</span></a></li>
-            <li><a href="#" class="link-vm"><i class="fi-social-vimeo" aria-hidden="true" title="Link to Vimeo"></i><span class="sr-only">Vimeo</span></a></li>
+            <!-- <li><a href="#" class="link-fb"><i class="fa fa-facebook" aria-hidden="true" title="Link to Facebook"></i><span class="sr-only">Facebook</span></a></li> -->
+            <li><a href="https://twitter.com/jasonlmann" class="link-tw"><i class="fa fa-twitter" aria-hidden="true" title="Link to Twitter"></i><span class="sr-only">Twitter</span></a></li>
+            <li><a href="#" class="link-vm"><i class="fa fa-vimeo" aria-hidden="true" title="Link to Vimeo"></i><span class="sr-only">Vimeo</span></a></li>
           </ul>
         </div>
       
@@ -169,9 +179,9 @@
           <h4>Lindsay Steven Mann</h4>
           <p>As a director, cinematographer, and editor, Lindsay has worked with The New York Times, Sports Illustrated, Rolling Stone Magazine, and PBS. He has filmed Bruce Springsteen in Asbury Park, operated for Haskell Wexler, ASC., and assisted on Martin Scorsese's "Shine a Light." Lindsay studied film at Boston University. He lives and works in Portland, ME and Brooklyn, NY with his wife and daughter.</p>
           <ul class="bio-links menu">
-            <li><a href="#" class="link-fb"><i class="fi-social-facebook" aria-hidden="true" title="Link to Facebook"></i><span class="sr-only">Facebook</span></a></li>
-            <li><a href="https://twitter.com/BeechwoodFilm" class="link-tw"><i class="fi-social-twitter" aria-hidden="true" title="Link to Twitter"></i><span class="sr-only">Twitter</span></a></li>
-            <li><a href="#" class="link-vm"><i class="fi-social-vimeo" aria-hidden="true" title="Link to Vimeo"></i><span class="sr-only">Vimeo</span></a></li>
+            <li><a href="#" class="link-fb"><i class="fa fa-facebook" aria-hidden="true" title="Link to Facebook"></i><span class="sr-only">Facebook</span></a></li>
+            <li><a href="https://twitter.com/BeechwoodFilm" class="link-tw"><i class="fa fa-twitter" aria-hidden="true" title="Link to Twitter"></i><span class="sr-only">Twitter</span></a></li>
+            <li><a href="#" class="link-vm"><i class="fa fa-vimeo" aria-hidden="true" title="Link to Vimeo"></i><span class="sr-only">Vimeo</span></a></li>
           </ul>
         </div>
       </section>
@@ -184,37 +194,82 @@
           North Haven, ME 04853<br>
           phone: (207) 613-4066<br>
           email: info@pull-start.com</p>
-          <form class="">
+          <!-- <form class="" id="gform" method="POST" action="https://script.google.com/macros/s/AKfycbwSmjORfWvHk4CjiVL2LJztyMdSyxtjiESgqQba0ItrYqENYiA/exec" data-abide novalidate>
+            <div data-abide-error class="alert callout" style="display: none;">
+          <p><i class="fi-alert"></i> There are some errors in your form.</p>
+            </div>
             <div class="row">
               <div class="small-12 large-6 columns">
                 <label><span class="sr-only">Name</span>
-                  <input type="text" placeholder="Name">
+                  <input type="text" placeholder="Name" name="name" required >
+                  <span class="form-error">This field is required.</span>
                 </label>
               </div>
               <div class=" small-12 large-6 columns">
                 <label><span class="sr-only">Email address</span>
-                  <input type="email" placeholder="Email address here!">
+                  <input type="email" placeholder="Email address here!" name="email" pattern="email" required >
                 </label>
               </div>
             </div>
             <div class="row">
               <div class="columns">
                 <label><span class="sr-only">What's up?</span>
-                  <textarea placeholder="What's up?" rows="9"></textarea>
+                  <textarea placeholder="What's up?" rows="9" name="message"></textarea>
                 </label>
               </div>
             </div>
             <div class="row">
               <div class="columns">
                 <label>
-                  <button type="submit" value="Send us a message!" class="button">Send us a message!</button>
+                  <button type="submit" value="Send us a message!" class="button" name="submit">Send us a message!</button>
                 </label>
               </div>
       
             </div>
           </form>
-        </div>
+          <div id="thankyou_message">
+            <h5>Got it.</h5>
+            <p>Your message has been sent. We'll get back to you as soon as we can!</p>
+          </div> -->
+          <div id="thankyou_message" class="callout success">
+            <h5>Got it!</h5>
+            <p>Your message has been sent. We'll get back to you as soon as we can!</p>
+          </div>
+          <form data-abide="ajax" novalidate id="gform" method="POST" action="https://script.google.com/macros/s/AKfycbwSmjORfWvHk4CjiVL2LJztyMdSyxtjiESgqQba0ItrYqENYiA/exec">
+            <div data-abide-error class="alert callout" style="display: none;">
+              <p><i class="fi-alert"></i> There are some errors in your form.</p>
+            </div>
+            <div class="row">
+              <div class="small-12 large-6 columns">
+                <label>
+                  <input type="text" placeholder="Name" required name="name" id="name">
+                  <span class="form-error">Don't forget to tell us your name!</span>
+                </label>
+              </div>
+              <div class="small-12 large-6 columns">
+                <label>
+                  <input type="text" placeholder="Email address" aria-describedby="exampleHelpTex" required pattern="email" name="email" id="email">
+                  <span class="form-error">Make sure your email address is spelled correctly.</span>
+                </label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="columns">
+                <label><span class="sr-only">What's up?</span>
+                  <textarea placeholder="What's up?" rows="9" name="message" id="message"></textarea>
+                </label>
+              </div>
+            </div>
       
+            <div class="row">
+              <fieldset class="columns">
+                <button class="button" type="submit" value="Submit">Send us a message!</button>
+              </fieldset>
+      
+            </div>
+          </form>
+      
+        </div>
       </section>
       
       
@@ -223,9 +278,9 @@
           <div class="columns">
             <div class="menu-centered">
               <ul class="menu">
-                <li><a href="https://facebook.com/pullstartpictures"><i class="fi-social-facebook social-icon"></i><span class="sr-only">Facebook</span></a></li>
-                <li><a href="https://twitter.com/pullstartpics"><i class="fi-social-twitter social-icon"></i><span class="sr-only">Twitter</span></a></li>
-                <li><a href="https://vimeo.com/pullstart" ><i class="fi-social-vimeo social-icon"></i><span class="sr-only">Vimeo</span></a></li>
+                <li><a href="https://facebook.com/pullstartpictures"><i class="fa fa-facebook social-icon" aria-hidden="true"></i><span class="sr-only">Facebook</span></a></li>
+                <li><a href="https://twitter.com/pullstartpics"><i class="fa fa-twitter social-icon" aria-hidden="true"></i><span class="sr-only">Twitter</span></a></li>
+                <li><a href="https://vimeo.com/pullstart" ><i class="fa fa-vimeo social-icon" aria-hidden="true"></i><span class="sr-only">Vimeo</span></a></li>
                 
               </ul>
             </div>
@@ -239,7 +294,6 @@
 
       </div><!-- end off canvas content -->
     </div><!-- end off canvas wrap -->
-
     <script src="assets/js/app.js"></script>
   </body>
 </html>
