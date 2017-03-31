@@ -22,11 +22,8 @@
     <div class="off-canvas-wrapper">
 
       <div class="off-canvas-absolute position-top" id="offCanvasLeft" data-off-canvas>
-        <button class="close-button" aria-label="Close menu" type="button" data-close>
-          <span aria-hidden="true">&times;</span>
-        </button>
         <nav>
-          <ul class="menu vertical">
+          <ul class="menu vertical" data-close-on-click="true">
             {{>primary-nav }}
             <li>
               <ul class="submenu menu">

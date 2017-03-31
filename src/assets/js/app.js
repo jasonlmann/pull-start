@@ -1,4 +1,8 @@
 $(document).foundation();
+// Auto close off-canvas menu
+$('.off-canvas-absolute a').on('click', function() {
+  $('.off-canvas-absolute').foundation('close');
+});
 $(function() {
   $('a[href*="#"]:not([href="#"])').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
