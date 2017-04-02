@@ -270,6 +270,12 @@ $light-gray-background: #f5f5f5;
   // border-bottom: 1px solid $light-gray;
   margin-bottom: 1.6rem;
 }
+.vod-list {
+  border-top: 1px solid $light-gray;
+  ul {
+    list-style: none;
+  }
+}
 /*  Accessibility Styles */
 .sr-only {
   display: none;
