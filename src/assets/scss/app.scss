@@ -5,8 +5,11 @@
 @import 'motion-ui';
 
 @include foundation-global-styles;
-@include foundation-grid;
-// @include foundation-flex-grid;
+//@include foundation-grid;
+//Enable Flexgrid
+@include foundation-flex-grid;
+@include foundation-flex-classes;
+//
 @include foundation-typography;
 @include foundation-button;
 @include foundation-forms;
@@ -17,13 +20,14 @@
 @include foundation-breadcrumbs;
 @include foundation-button-group;
 @include foundation-callout;
+@include foundation-card;
 @include foundation-close-button;
 @include foundation-menu;
 @include foundation-menu-icon;
 @include foundation-drilldown-menu;
 @include foundation-dropdown;
 @include foundation-dropdown-menu;
-@include foundation-flex-video;
+@include foundation-responsive-embed;
 @include foundation-label;
 @include foundation-media-object;
 @include foundation-off-canvas;
@@ -48,3 +52,232 @@
 
 @include motion-ui-transitions;
 @include motion-ui-animations;
+
+/* Additional color variables */
+$light-gray-background: #f5f5f5;
+
+
+.title-bar {
+  text-transform: uppercase;
+  a {
+    color: $header-color;
+  }
+  h4 {
+    font-size: 1.2rem;
+  }
+  @include breakpoint(medium) {
+  }
+  @include breakpoint(large) {
+    background-color: #38435c;
+    .title-bar-title, .menu a {
+      color: $white;
+    }
+  }
+}
+
+// Off-canvas styles
+
+.off-canvas-absolute {
+  .menu {
+    li {
+      border-bottom: 1px dotted $dark-gray;
+    }
+    a {
+      color: $light-gray;
+    }
+  }
+}
+
+/* Portfolio */
+.portfolio {
+  .portfolio-item {
+    padding: 0;
+    position: relative;
+    z-index: 1;
+
+    .item-caption {
+      position: absolute;
+      width: 100%;
+      bottom: 2rem;
+      top: auto;
+      z-index: 3;
+      color: $white;
+      text-align: center;
+
+      h4 {
+        font-size: 2.6rem;
+        text-transform: uppercase;
+        margin: .5rem auto .1rem auto;
+      }
+      p {
+        line-height: 0;
+      }
+      @include breakpoint(medium) {
+        h4 {
+          font-size: 1.8rem;
+        }
+        p {font-size: .9rem;
+        }
+      }
+    }
+    .item-image:after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: 2;
+      background-color: pink;
+      opacity: 0;
+      -webkit-transition: opacity 0.6s;
+    }
+    .item-image:after, portfolio-item:hover {
+      background: linear-gradient(rgba(0, 0, 0, 0) 0%, #191a1c 100%);
+      opacity: 1;
+    }
+  }
+}
+
+/* Description */
+.description {
+  @include grid-column-row() ;
+  padding: 4rem 2rem;
+  p {
+    font-family: "Raleway";
+    color: $primary-color;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  @include breakpoint(medium) {
+    @include flex-grid-column(10);
+  }
+  @include breakpoint(large) {
+    @include flex-grid-column(8);
+  }
+}
+
+/* Bios */
+.bios {
+  @include flex-grid-row;
+  .bio-item {
+    @include flex-grid-column(10);
+    @include grid-column-position(center);
+    position: relative;
+    padding-bottom: 4rem;
+    h4 {
+      color: $primary-color;
+      text-transform: uppercase;
+      font-size: 1rem;
+    }
+    p {
+      font-size: .9rem;
+    }
+    .bio-links {
+      margin-bottom: 1.2rem;
+      li a {
+        padding-left: 0;
+      }
+      i {
+        font-size: 20px;
+      }
+      position: absolute;
+      bottom: 0;
+    }
+    @include breakpoint(large){
+      @include flex-grid-column(4);
+    }
+  }
+}
+
+/* Contact Styles*/
+
+#contact {
+  @include flex-grid-row();
+  padding-bottom: 2rem;
+    text-align: center;
+    .address {
+      font-size: .85rem;
+      font-family: "Raleway";
+      padding-bottom: 1rem;
+    }
+    .contact-wrap {
+      @include flex-grid-column(11);
+      @include grid-column-position(center);
+
+      @include breakpoint(medium) {
+        @include flex-grid-column(10);
+      }
+      @include breakpoint(large) {
+        @include flex-grid-column(8);
+      }
+      #thankyou_message {
+        display: none;
+      }
+      input, textarea {
+        padding: 1.6rem 1.2rem;
+        margin-bottom: 1rem;
+      }
+
+    }
+
+}
+.button {
+  border-radius: $button-radius;
+  font-family: $header-font-family;
+  font-size: .7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 1.2rem;
+}
+
+
+
+/* Social Links */
+
+
+/* Footer styles */
+#footer {
+  background: $black;
+  // height: 10vh;
+  .row {
+    padding: 3rem 0;
+    color: $light-gray;
+    text-align: center;
+    span {
+      font-size: .9rem;
+    }
+    .social-icon {
+      font-size: 24px;
+    }
+  }
+}
+
+/* Project pages */
+.project-page {
+  margin-bottom: 1rem;
+  h4, .project-status {
+    color: $primary-color;
+  }
+  .project-status {
+    font-family: "Raleway";
+  }
+}
+.project-main {
+  margin-top: 1rem;
+}
+.project-text {
+  // border-bottom: 1px solid $light-gray;
+  margin-bottom: 1.6rem;
+}
+.vod-list {
+  border-top: 1px solid $light-gray;
+  ul {
+    list-style: none;
+  }
+}
+/*  Accessibility Styles */
+.sr-only {
+  display: none;
+  height: 0;
+}

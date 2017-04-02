@@ -3,5 +3,8 @@ node_modules
 npm-debug.log
 bower_components
 dist
-/.publish
+.ftppass
+*.swp
 /config.codekit3
+/src/.htaccess
+/.publish

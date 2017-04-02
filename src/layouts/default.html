@@ -6,14 +6,53 @@
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Foundation for Sites</title>
+    <title>{{#ifpage 'index'}}Pull-Start Pictures | Maine-based documentary film production{{/ifpage}}
+      {{#unlesspage 'index'}}{{title}} | Pull-Start Pictures{{/unlesspage}}</title>
+    <!-- Add Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Hind|Montserrat|Raleway:400,500,700" rel="stylesheet">
+    <script src="https://use.fontawesome.com/f5aa39c4bf.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css">
     <link rel="stylesheet" href="{{root}}assets/css/app.css">
+    <!-- Google Analytics tracking code -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-23019298-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+
   </head>
   <body>
 
     {{!-- Pages you create in the src/pages/ folder are inserted here when the flattened page is created. --}}
-    {{> body}}
+    {{> nav}}
 
+    <div class="off-canvas-wrapper">
+
+      <div class="off-canvas-absolute position-top" id="offCanvasLeft" data-off-canvas>
+        <nav>
+          <ul class="menu vertical" data-close-on-click="true">
+            {{>primary-nav }}
+            <li>
+              <ul class="submenu menu">
+                {{>social-links }}
+              </ul>
+            </li>
+          </ul>
+        </nav>
+
+      </div>
+
+      <div class="off-canvas-content" data-off-canvas-content>
+
+      {{> body}}
+      {{> footer}}
+
+      </div><!-- end off canvas content -->
+    </div><!-- end off canvas wrap -->
     <script src="{{root}}assets/js/app.js"></script>
   </body>
 </html>
