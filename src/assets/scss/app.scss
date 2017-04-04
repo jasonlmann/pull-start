@@ -60,7 +60,6 @@ $light-gray-background: #f5f5f5;
 .title-bar {
   text-transform: uppercase;
   a {
-    color: $white;
     font-family: 'Raleway', sans-serif;
   }
   h4 {
@@ -70,10 +69,10 @@ $light-gray-background: #f5f5f5;
   }
   @include breakpoint(large) {
     background-color: #38435c;
-      .title-bar-title, .menu a {
+    a {
         color: $white;
       }
-      .menu a:hover {
+    a:hover {
         color: $light-gray;
       }
 
@@ -205,6 +204,7 @@ $light-gray-background: #f5f5f5;
 #contact {
   @include flex-grid-row();
   padding-top: 0;
+
   padding-bottom: 2rem;
     text-align: center;
     .address {
