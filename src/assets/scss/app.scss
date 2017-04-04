@@ -92,9 +92,13 @@ $light-gray-background: #f5f5f5;
     }
   }
 }
-
+/* Common styles for main sections*/
+.main-section {
+  padding: 4rem 2rem;
+}
 /* Portfolio */
 .portfolio {
+  padding: 0;
   .portfolio-item {
     padding: 0;
     position: relative;
@@ -147,7 +151,7 @@ $light-gray-background: #f5f5f5;
 /* Description */
 .description {
   @include grid-column-row() ;
-  padding: 4rem 2rem;
+  // padding: 4rem 2rem;
   p {
     font-family: "Raleway";
     color: $primary-color;
@@ -165,6 +169,7 @@ $light-gray-background: #f5f5f5;
 /* Bios */
 .bios {
   @include flex-grid-row;
+  // padding: 4rem 2rem;
   .bio-item {
     @include flex-grid-column(10);
     @include grid-column-position(center);
@@ -199,6 +204,7 @@ $light-gray-background: #f5f5f5;
 
 #contact {
   @include flex-grid-row();
+  padding-top: 0;
   padding-bottom: 2rem;
     text-align: center;
     .address {
