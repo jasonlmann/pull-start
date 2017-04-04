@@ -60,7 +60,8 @@ $light-gray-background: #f5f5f5;
 .title-bar {
   text-transform: uppercase;
   a {
-    color: $header-color;
+    color: $white;
+    font-family: 'Raleway', sans-serif;
   }
   h4 {
     font-size: 1.2rem;
@@ -69,10 +70,14 @@ $light-gray-background: #f5f5f5;
   }
   @include breakpoint(large) {
     background-color: #38435c;
-    .title-bar-title, .menu a {
-      color: $white;
+      .title-bar-title, .menu a {
+        color: $white;
+      }
+      .menu a:hover {
+        color: $light-gray;
+      }
+
     }
-  }
 }
 
 // Off-canvas styles
@@ -86,9 +91,6 @@ $light-gray-background: #f5f5f5;
       color: $light-gray;
     }
   }
-}
-.menu a:hover {
-  color: $light-gray;
 }
 
 /* Portfolio */
